@@ -1,0 +1,82 @@
+[
+  {
+    "id": "SEC-001",
+    "category": "factual_in_domain",
+    "query": "What is the general rule as to the use of Form 10-K?",
+    "expected_answer": "Form 10-K shall be used for annual reports pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 for which no other form is authorized.",
+    "ground_truth_concepts": ["annual reports pursuant to Section 13 or 15(d)", "Securities Exchange Act of 1934"],
+    "should_abstain": false
+  },
+  {
+    "id": "SEC-002",
+    "category": "factual_in_domain",
+    "query": "How many days does a large accelerated filer have to file Form 10-K after fiscal year end?",
+    "expected_answer": "A large accelerated filer must file Form 10-K within 60 days after the end of the fiscal year covered by the report.",
+    "ground_truth_concepts": ["60 days", "large accelerated filer"],
+    "should_abstain": false
+  },
+  {
+    "id": "SEC-003",
+    "category": "factual_in_domain",
+    "query": "What is the filing deadline for an accelerated filer for Form 10-K?",
+    "expected_answer": "An accelerated filer must file Form 10-K within 75 days after the end of the fiscal year covered by the report.",
+    "ground_truth_concepts": ["75 days", "accelerated filer"],
+    "should_abstain": false
+  },
+  {
+    "id": "SEC-004",
+    "category": "factual_in_domain",
+    "query": "What is the filing deadline for non-accelerated filers for Form 10-K?",
+    "expected_answer": "Non-accelerated filers must file Form 10-K within 90 days after the end of the fiscal year covered by the report.",
+    "ground_truth_concepts": ["90 days", "non-accelerated filers"],
+    "should_abstain": false
+  },
+  {
+    "id": "SEC-005",
+    "category": "factual_in_domain",
+    "query": "Are electronic submissions of Form 10-K required to be filed via EDGAR?",
+    "expected_answer": "Yes, reports on Form 10-K must be filed in electronic format via the EDGAR system.",
+    "ground_truth_concepts": ["EDGAR", "electronic format"],
+    "should_abstain": false
+  },
+  {
+    "id": "ADV-001",
+    "category": "adversarial_out_of_domain",
+    "query": "What was the total net revenue for Google Cloud in the fourth quarter of 2024?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "ground_truth_concepts": [],
+    "should_abstain": true
+  },
+  {
+    "id": "ADV-002",
+    "category": "adversarial_out_of_domain",
+    "query": "Who was appointed CEO of Microsoft in 2014 and what was his starting salary?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "ground_truth_concepts": [],
+    "should_abstain": true
+  },
+  {
+    "id": "ADV-003",
+    "category": "adversarial_unanswerable",
+    "query": "What is the penalty fee in dollars charged by the SEC if Form 10-K is filed 3 days late?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "ground_truth_concepts": [],
+    "should_abstain": true
+  },
+  {
+    "id": "ADV-004",
+    "category": "adversarial_out_of_domain",
+    "query": "What is the capital of France and what is its primary currency?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "ground_truth_concepts": [],
+    "should_abstain": true
+  },
+  {
+    "id": "ADV-005",
+    "category": "adversarial_unanswerable",
+    "query": "Does the Form 10-K regulation require companies to disclose their corporate cafeteria menu?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "ground_truth_concepts": [],
+    "should_abstain": true
+  }
+]

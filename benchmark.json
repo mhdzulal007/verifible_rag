@@ -1,0 +1,34 @@
+[
+  {
+    "id": "SEC-001",
+    "category": "factual_in_domain",
+    "query": "What is the general rule as to the use of Form 10-K?",
+    "expected_answer": "Form 10-K shall be used for annual reports pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 for which no other form is authorized.",
+    "ground_truth_concepts": ["annual reports pursuant to Section 13 or 15(d)", "Securities Exchange Act of 1934"],
+    "should_abstain": false
+  },
+  {
+    "id": "SEC-002",
+    "category": "factual_in_domain",
+    "query": "How many days does a large accelerated filer have to file Form 10-K after fiscal year end?",
+    "expected_answer": "A large accelerated filer must file Form 10-K within 60 days after the end of the fiscal year covered by the report.",
+    "ground_truth_concepts": ["60 days", "large accelerated filer"],
+    "should_abstain": false
+  },
+  {
+    "id": "ADV-001",
+    "category": "adversarial_out_of_domain",
+    "query": "What was the total net revenue for Google Cloud in the fourth quarter of 2024?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "ground_truth_concepts": [],
+    "should_abstain": true
+  },
+  {
+    "id": "ADV-002",
+    "category": "adversarial_out_of_domain",
+    "query": "What is the capital of France?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "ground_truth_concepts": [],
+    "should_abstain": true
+  }
+]
